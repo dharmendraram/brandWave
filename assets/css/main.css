@@ -963,7 +963,7 @@ section,
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   z-index: 1;
 }
 
@@ -1359,14 +1359,20 @@ section,
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   height: 100%;
 }
+.team .swiper-slide{
+  height: 335px; 
+  display: flex;
+  flex-direction: column;
+}
 
 .team .team-member .member-img {
   position: relative;
   overflow: hidden;
 }
 .team .team-member .member-img img{
-  height: 190px;
+  height: 200px;
   width: 100%;
+  object-fit: fill;
 }
 
 .team .swiper-wrapper {
@@ -1424,7 +1430,8 @@ section,
 }
 
 .team .team-member .member-info {
-  padding: 25px 15px;
+  padding: 20px 12px 12px 12px;
+  text-align: center;
 }
 
 .team .team-member .member-info h4 {
@@ -1716,3 +1723,20 @@ section,
   color: var(--accent-color);
 }
 
+
+@media (max-width: 768px) {
+  .team .swiper-slide {
+    height: 300px; 
+  }
+  .member-img {
+    height: 60%;
+  }
+  .member-info {
+    height: 35%;
+  }
+  .features .features-image {
+    position: relative;
+    min-height: 175px;
+
+}
+}
