@@ -9,14 +9,14 @@
   --background-color: #ffffff; 
   --default-color: #444444; 
   --heading-color: #151515; 
-  --accent-color: #ffc451; 
+  --accent-color: #ccc; 
   --surface-color: #ffffff;
   --contrast-color: #312f2f; 
 }
 
 :root {
   --nav-color: rgba(255, 255, 255, 0.905);  
-  --nav-hover-color: #ffc451; 
+  --nav-hover-color: #6a6969; 
   --nav-mobile-background-color: #ffffff;
   --nav-dropdown-background-color: #ffffff;
   --nav-dropdown-color: #212529;
